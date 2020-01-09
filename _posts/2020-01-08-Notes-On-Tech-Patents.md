@@ -4,8 +4,6 @@ title: "Notes on Tech Patents"
 categories: misc
 ---
 
-## Notes On Tech Patents
-
 So earlier in my last semester I took a class on technology law, and I learned a little bit about tech patents. Overall, I think the law surrounding patents, especially software patents is quite confusing, as case law has not given us the best tools to address the problems. It seems a lot of intuition and subjective judgment pervade decisions on software patents in particular, and an ability to persuade effectively may be the make-or-break component in determining if your patent application succeeds with the patent trade office as well as in any potential litigation regarding your patent. 
 
 ### Why Should We Even Care ? 
