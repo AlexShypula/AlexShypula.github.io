@@ -15,15 +15,15 @@ I am currently working at MIT's Computer Science and Artificial Intelligence Lab
 &nbsp;  
 &nbsp;  
 
-# Publications
+# \~/Publications
 
 Shypula, Alex, Pengcheng Yin, Jeremy Lacomis, Claire Le Goues, Edward Schwartz, and Graham Neubig. "Learning to Superoptimize Real-world Programs." [arXiv preprint arXiv:2109.13498 (2021)](https://arxiv.org/abs/2109.13498).
 
-# Resume / CV
+# \~/CV
 
 If you would like the most recent copy of my CV, you can locate it [here](assets/cv_shypula_2021_phd.pdf).
 
-# Background 
+# \~/Background 
 
 The spark for me came when I was writing the malloc systems code for CMU's intro to system's course. It was highly error-prone, it required careful programming skill, and its performance relied on increasingly complex use of data structures from implicit lists, to linked lists, to binned linked-lists. Nevertheless, we had a large test suite that would estimate the performance of our storage allocator and provide feedback as if it were an RL environment. I wondered, "could an artificially intelligent agent learn to write code like this from scratch," re-discover classic data structures, and teach us something new? I thought it was compelling, becuase the agent would have to write programs to explain its choices, which would be more interpretable than, say, a black-box neural network. 
 
@@ -31,7 +31,7 @@ The path to superintelligent programming machines is challenging, because the di
 
 Before my research career, I majored in Business at NYU's Stern School of Business and studied Chinese. I loved learning Chinese, because for some reason as a kid, I thought it required some kind of superintelligence to learn: it taught me that discipline, a love of learning, and time are truly the ingredients to master anything, not some kind of innate intelligence. It was when I worked at IBM and saw the potential of deep learning to change our daily lives: from how we write programs, solve problems, and run drive-thrus, that I made the leap to devote my life to AI research and its applications. It has taken a lot of work, but I haven't looked back once. 
 
-# Other
+# \~/Other
 
 Besides CS research, I walking up big tall snowy things: some mountains on my list (in increasing altidude) [Mt. Ranier](https://en.wikipedia.org/wiki/Mount_Rainier), [Denali](https://en.wikipedia.org/wiki/Denali), [Aconcagua](https://en.wikipedia.org/wiki/Aconcagua), and [Cho Oyu](https://en.wikipedia.org/wiki/Cho_Oyu). Here are [some photos](baker.md) of me doing a (very) stochastic gradient ascent on a practice rescue line in a crevasse on Mt. Baker. 
 
