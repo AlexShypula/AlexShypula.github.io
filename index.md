@@ -33,6 +33,6 @@ Before my research career, I majored in Business at NYU's Stern School of Busine
 
 # \~/Other
 
-Besides CS research, I walking up big tall snowy things: some mountains on my list (in increasing altidude) [Mt. Ranier](https://en.wikipedia.org/wiki/Mount_Rainier), [Denali](https://en.wikipedia.org/wiki/Denali), [Aconcagua](https://en.wikipedia.org/wiki/Aconcagua), and [Cho Oyu](https://en.wikipedia.org/wiki/Cho_Oyu). Here are [some photos](baker.md) of me doing a (very) stochastic gradient ascent on a practice rescue line in a crevasse on Mt. Baker. 
+Besides CS research, I love walking up big, tall, snowy things: some mountains on my list (in increasing altidude) [Mt. Ranier](https://en.wikipedia.org/wiki/Mount_Rainier), [Denali](https://en.wikipedia.org/wiki/Denali), [Aconcagua](https://en.wikipedia.org/wiki/Aconcagua), and [Cho Oyu](https://en.wikipedia.org/wiki/Cho_Oyu). Here are [some photos](baker.md) of me doing a (very) stochastic gradient ascent on a practice rescue line in a crevasse on Mt. Baker. 
 
 I also absolutely love coffee from all over the world, especially Panama and East Africa. 
