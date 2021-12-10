@@ -17,11 +17,13 @@ I am currently working at MIT's Computer Science and Artificial Intelligence Lab
 
 # \~/Publications
 
-Shypula, Alex, Pengcheng Yin, Jeremy Lacomis, Claire Le Goues, Edward Schwartz, and Graham Neubig. "Learning to Superoptimize Real-world Programs." [arXiv preprint arXiv:2109.13498 (2021)](https://arxiv.org/abs/2109.13498).
+Shypula A, Yin P, Lacomis J, Goues CL, Schwartz E, Neubig G. "Learning to Superoptimize Real-world Programs." [arXiv preprint arXiv:2109.13498 (2021)](https://arxiv.org/abs/2109.13498).
 
-# \~/CV
+# \~/CV and Contact
 
-If you would like the most recent copy of my CV, you can locate it [here](assets/cv_shypula_2021_phd.pdf).
+If you would like the most recent copy of my CV, you can locate it [here](assets/cv_shypula_2021_phd.pdf). 
+
+You can reach me at shypula 👨‍💻 mit 🏔️ edu. 
 
 # \~/Background 
 
@@ -33,6 +35,6 @@ Before my research career, I majored in Business at NYU's Stern School of Busine
 
 # \~/Other
 
-Besides CS research, I like walking up big, tall, snowy things: some mountains on my list are (in increasing altidude) [Mt. Ranier](https://en.wikipedia.org/wiki/Mount_Rainier), [Denali](https://en.wikipedia.org/wiki/Denali), [Aconcagua](https://en.wikipedia.org/wiki/Aconcagua), and [Cho Oyu](https://en.wikipedia.org/wiki/Cho_Oyu). Here are [some photos](baker.md) of me doing a (very) stochastic gradient ascent on a practice rescue line in a crevasse on Mt. Baker. 
+Besides CS research, I like walking up big, tall, snowy things: some mountains on my list are (in increasing altidude) [Mt. Rainier](https://en.wikipedia.org/wiki/Mount_Rainier), [Denali](https://en.wikipedia.org/wiki/Denali), [Aconcagua](https://en.wikipedia.org/wiki/Aconcagua), and [Cho Oyu](https://en.wikipedia.org/wiki/Cho_Oyu). Here are [some photos](baker.md) of me doing a (very) stochastic gradient ascent on a practice rescue line in a crevasse on Mt. Baker. 
 
 I also absolutely love coffee from all over the world, especially Panama and East Africa. 
