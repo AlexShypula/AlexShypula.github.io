@@ -1,6 +1,19 @@
+plugins:
+  - jekyll-seo-tag
 title: /Alexander_Shypuλa/ 
 description: Researcher @ MIT CSAIL
 show_downloads: false
-google_analytics:
+google_analytics: G-5ZR5HTD4YS
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
+tagline: Researcher @ MIT CSAIL
+url: alexshypula.github.io
+author: Alexander Shypula
+twitter:
+  username: alex_shypula
+  card: summary
+logo: /assets/images/lambda.png
+google_site_verification: google-site-verification=WNBy8FTxAbz6FDEOe4DjT0nCYwAh-4Loki4rp0JjXuc
+
+
+
