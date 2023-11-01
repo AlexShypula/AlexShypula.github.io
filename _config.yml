@@ -1,12 +1,12 @@
 plugins:
   - jekyll-seo-tag
-title: /Alexander_Shypuλa/ 
-description: Researcher @ MIT CSAIL
+title: /Alexander_Shypula/ 
+description: PhD Student @ UPenn
 show_downloads: false
 google_analytics: G-5ZR5HTD4YS
 theme: jekyll-theme-hacker
 remote_theme: pages-themes/hacker@v0.2.0
-tagline: Researcher @ MIT CSAIL
+tagline: PhD Student @ UPenn
 url: alexshypula.github.io
 author: Alexander Shypula
 twitter:
