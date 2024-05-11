@@ -4,7 +4,7 @@ layout: default
 
 <img align="left" src="assets/images/Photo.jpeg" style="padding-right: 30px; padding-bottom: 30px;">
 &nbsp;  
-My name is Alex and I'm a researcher interested applications of machine learning to software engineering and program synthesis. Most of my work to-date has focused on AI for program optimization and leveraging tools from program analysis, compilers, and architecture research. 
+My name is Alex and I'm a PhD student in CS interested applications of machine learning to software engineering and program synthesis. Most of my work to-date has focused on AI for program optimization and leveraging tools from program analysis, compilers, and architecture research. 
 
 I'm currently a second year PhD student at the University of Pennsylvania where I'm advised by [Osbert Bastani](https://obastani.github.io/). Before that, I spent a year working at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) with [Yoon Kim (MIT CSAIL)](https://people.csail.mit.edu/yoonkim/) and [Jie Chen (MIT-IBM Watson AI Lab)](https://jiechenjiechen.github.io/). Before that, I was a Master's student at at Carnegie Mellon University's (CMU) School of Computer Science in the Artificial Intelligence and Innovation program where I was also a member of [Neulab](https://www.cs.cmu.edu/~neulab/index.html) where I was advised by [Professor Graham Neubig](http://www.phontron.com/). 
 
