@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+description: Side projects by Alexander Shypula, including an interactive model of who ultimately owns the equity in leading AI companies.
 ---
 
 ## Projects

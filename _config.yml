@@ -1,15 +1,39 @@
 title: Alexander Shypula
-description: PhD Student @ UPenn
+tagline: PhD Student @ UPenn
+description: >-
+  Alexander Shypula is a PhD student in computer science at the University of Pennsylvania
+  working on the diversity and creativity of LLMs, LLM-driven program optimization, and
+  neural decompilation.
 author: Alexander Shypula
 url: https://alexshypula.github.io
+lang: en
+image: /assets/images/profile.jpg
 theme: minima
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
 twitter_username: alex_shypula
+twitter:
+  username: alex_shypula
+  card: summary
+social:
+  name: Alexander Shypula
+  links:
+    - https://scholar.google.com/citations?user=JGStAr0AAAAJ
+    - https://www.semanticscholar.org/author/2343506222
+    - https://github.com/AlexShypula
+    - https://x.com/alex_shypula
 google_analytics: G-5ZR5HTD4YS
 google_site_verification: google-site-verification=WNBy8FTxAbz6FDEOe4DjT0nCYwAh-4Loki4rp0JjXuc
 logo: /assets/images/lambda.png
+
+# keep the (deliberately unlinked) ai-equity page out of the sitemap
+defaults:
+  - scope:
+      path: "ai-equity"
+    values:
+      sitemap: false
 
 # ai-equity/ is a static app (index.html + data/) copied through as-is. Keep its model
 # source out of the built site; docs/ is left in so the audit renders as pages.

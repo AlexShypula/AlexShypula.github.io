@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img align="left" src="assets/images/profile.jpg" width="220" style="padding-right: 30px; padding-bottom: 20px; border-radius: 8px;">
+<img align="left" src="assets/images/profile.jpg" width="220" alt="Alexander Shypula holding a long-haired dachshund in a car" style="padding-right: 30px; padding-bottom: 20px; border-radius: 8px;">
 &nbsp;  
 My name is Alexander and I'm a researcher interested in evaluating and improving the diversity and creativity of LLMs, and in applying LLMs to complex programming tasks like program optimization and decompilation. 
 
