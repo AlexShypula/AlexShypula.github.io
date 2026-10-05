@@ -4,7 +4,7 @@ layout: default
 
 <img align="left" src="assets/images/profile.jpg" width="220" style="padding-right: 30px; padding-bottom: 20px; border-radius: 8px;">
 &nbsp;  
-My name is Alex and I'm a researcher interested in evaluating and improving the diversity and creativity of LLMs, and in applying LLMs to complex programming tasks like program optimization and decompilation. 
+My name is Alexander and I'm a researcher interested in evaluating and improving the diversity and creativity of LLMs, and in applying LLMs to complex programming tasks like program optimization and decompilation. 
 
 I'm currently a fifth year PhD student at the University of Pennsylvania, graduating in 2027, where I'm advised by [Osbert Bastani](https://obastani.github.io/). Before that, I spent a year working at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) with [Yoon Kim (MIT CSAIL)](https://people.csail.mit.edu/yoonkim/) and [Jie Chen (MIT-IBM Watson AI Lab)](https://jiechenjiechen.github.io/). Earlier, I was a Master's student at Carnegie Mellon University's (CMU) School of Computer Science in the Artificial Intelligence and Innovation program, where I was a member of [Neulab](https://www.cs.cmu.edu/~neulab/index.html) and advised by [Graham Neubig](http://www.phontron.com/). 
 
