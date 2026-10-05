@@ -1,0 +1,3447 @@
+{
+ "total_busd": 20117.0,
+ "links": [
+  {
+   "source": "C:nvda",
+   "target": "H:Founders & insiders",
+   "origin": "nvda",
+   "value": 222.4
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "nvda",
+   "value": 222.4
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 222.4
+  },
+  {
+   "source": "C:nvda",
+   "target": "H:Index funds",
+   "origin": "nvda",
+   "value": 1612.3999999999999
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US taxable accounts",
+   "origin": "nvda",
+   "value": 435.348
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 383.1118
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 413.76074400000005
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 582.329936
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 145.582484
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 7.662236
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "nvda",
+   "value": 677.208
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 27.593168000000002
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 151.762424
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 689.8291999999999
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 469.083856
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 41.389752
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "nvda",
+   "value": 145.11599999999999
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 7.749528000000001
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 28.414935999999997
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 201.487728
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 263.483952
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 15.499056000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Endowments & foundations",
+   "origin": "nvda",
+   "value": 32.248
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "nvda",
+   "value": 182.31239999999997
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "nvda",
+   "value": 64.496
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "nvda",
+   "value": 398.48519999999996
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "nvda",
+   "value": 112.868
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 5.240022
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 26.20011
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 164.18735599999997
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 139.73392
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 13.973391999999999
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "nvda",
+   "value": 96.74399999999999
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 84.29238000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 140.4873
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 224.77968
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 95.53136400000002
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 16.858476000000003
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Offshore vehicles",
+   "origin": "nvda",
+   "value": 16.124
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 29.361804
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 22.274472
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 37.461612
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "nvda",
+   "value": 41.511516
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "nvda",
+   "value": 3.037428
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "nvda",
+   "value": 24.299424
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "nvda",
+   "value": 44.548944
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "nvda",
+   "value": 32.248
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "nvda",
+   "value": 128.56944
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "nvda",
+   "value": 74.99884
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "nvda",
+   "value": 10.714120000000001
+  },
+  {
+   "source": "C:nvda",
+   "target": "H:Active managers",
+   "origin": "nvda",
+   "value": 1506.76
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US taxable accounts",
+   "origin": "nvda",
+   "value": 421.8928
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "nvda",
+   "value": 512.2984
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US DB pensions & insurance",
+   "origin": "nvda",
+   "value": 195.8788
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Endowments & foundations",
+   "origin": "nvda",
+   "value": 45.202799999999996
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign sovereign & official",
+   "origin": "nvda",
+   "value": 75.33800000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "nvda",
+   "value": 105.4732
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign funds & retail",
+   "origin": "nvda",
+   "value": 105.4732
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Offshore vehicles",
+   "origin": "nvda",
+   "value": 15.0676
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "nvda",
+   "value": 30.1352
+  },
+  {
+   "source": "C:nvda",
+   "target": "H:Pensions, insurers & SWFs",
+   "origin": "nvda",
+   "value": 278.0
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "nvda",
+   "value": 11.120000000000001
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US DB pensions & insurance",
+   "origin": "nvda",
+   "value": 111.2
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Endowments & foundations",
+   "origin": "nvda",
+   "value": 5.5600000000000005
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign sovereign & official",
+   "origin": "nvda",
+   "value": 100.08
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "nvda",
+   "value": 50.04
+  },
+  {
+   "source": "C:nvda",
+   "target": "H:Hedge funds",
+   "origin": "nvda",
+   "value": 166.79999999999998
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US taxable accounts",
+   "origin": "nvda",
+   "value": 36.696
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "nvda",
+   "value": 1.668
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "nvda",
+   "value": 46.704
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Endowments & foundations",
+   "origin": "nvda",
+   "value": 28.355999999999998
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "nvda",
+   "value": 16.68
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "nvda",
+   "value": 10.008
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "nvda",
+   "value": 5.004
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Offshore vehicles",
+   "origin": "nvda",
+   "value": 11.676
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "nvda",
+   "value": 10.008
+  },
+  {
+   "source": "C:nvda",
+   "target": "H:Retail & other direct",
+   "origin": "nvda",
+   "value": 1773.64
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US taxable accounts",
+   "origin": "nvda",
+   "value": 638.5104
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "nvda",
+   "value": 177.36400000000003
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US DB pensions & insurance",
+   "origin": "nvda",
+   "value": 17.7364
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Endowments & foundations",
+   "origin": "nvda",
+   "value": 70.9456
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign sovereign & official",
+   "origin": "nvda",
+   "value": 141.8912
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "nvda",
+   "value": 70.9456
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign funds & retail",
+   "origin": "nvda",
+   "value": 354.72800000000007
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Offshore vehicles",
+   "origin": "nvda",
+   "value": 159.6276
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "nvda",
+   "value": 141.8912
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Founders & insiders",
+   "origin": "googl",
+   "value": 533.2
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "googl",
+   "value": 533.2
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 533.2
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Index funds",
+   "origin": "googl",
+   "value": 1075.0
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US taxable accounts",
+   "origin": "googl",
+   "value": 290.25
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 269.3735
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 290.92338000000007
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 409.44772
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 102.36193
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 5.38747
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "googl",
+   "value": 451.5
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 20.03284
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 110.18062
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 500.821
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 340.55828
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 30.04926
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "googl",
+   "value": 96.75
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 5.587635000000001
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 20.487995
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 145.27851
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 189.97959
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 11.175270000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Endowments & foundations",
+   "origin": "googl",
+   "value": 21.5
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "googl",
+   "value": 123.969
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "googl",
+   "value": 43.0
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "googl",
+   "value": 276.70500000000004
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "googl",
+   "value": 75.25000000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 3.739065
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 18.695325000000004
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 117.15737000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 99.70840000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 9.97084
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "googl",
+   "value": 64.5
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 58.03065
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 96.71775000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 154.7484
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 65.76807000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 11.60613
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Offshore vehicles",
+   "origin": "googl",
+   "value": 10.75
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 19.397084999999997
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 14.71503
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 24.748005
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "googl",
+   "value": 27.423465
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "googl",
+   "value": 2.006595
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "googl",
+   "value": 16.05276
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "googl",
+   "value": 29.43006
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "googl",
+   "value": 21.5
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "googl",
+   "value": 86.7396
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "googl",
+   "value": 50.598099999999995
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "googl",
+   "value": 7.228300000000001
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Active managers",
+   "origin": "googl",
+   "value": 1251.3000000000002
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US taxable accounts",
+   "origin": "googl",
+   "value": 350.3640000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "googl",
+   "value": 425.44200000000006
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US DB pensions & insurance",
+   "origin": "googl",
+   "value": 162.66900000000004
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Endowments & foundations",
+   "origin": "googl",
+   "value": 37.539
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign sovereign & official",
+   "origin": "googl",
+   "value": 62.56500000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "googl",
+   "value": 87.59100000000002
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign funds & retail",
+   "origin": "googl",
+   "value": 87.59100000000002
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Offshore vehicles",
+   "origin": "googl",
+   "value": 12.513000000000002
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "googl",
+   "value": 25.026000000000003
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Pensions, insurers & SWFs",
+   "origin": "googl",
+   "value": 193.5
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "googl",
+   "value": 7.74
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US DB pensions & insurance",
+   "origin": "googl",
+   "value": 77.4
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Endowments & foundations",
+   "origin": "googl",
+   "value": 3.87
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign sovereign & official",
+   "origin": "googl",
+   "value": 69.66
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "googl",
+   "value": 34.83
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Hedge funds",
+   "origin": "googl",
+   "value": 86.0
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US taxable accounts",
+   "origin": "googl",
+   "value": 18.92
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "googl",
+   "value": 0.86
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "googl",
+   "value": 24.080000000000002
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Endowments & foundations",
+   "origin": "googl",
+   "value": 14.620000000000001
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "googl",
+   "value": 8.6
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "googl",
+   "value": 5.16
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "googl",
+   "value": 2.58
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Offshore vehicles",
+   "origin": "googl",
+   "value": 6.0200000000000005
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "googl",
+   "value": 5.16
+  },
+  {
+   "source": "C:googl",
+   "target": "H:Retail & other direct",
+   "origin": "googl",
+   "value": 1161.0
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US taxable accounts",
+   "origin": "googl",
+   "value": 417.96
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "googl",
+   "value": 116.10000000000001
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US DB pensions & insurance",
+   "origin": "googl",
+   "value": 11.61
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Endowments & foundations",
+   "origin": "googl",
+   "value": 46.44
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign sovereign & official",
+   "origin": "googl",
+   "value": 92.88
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "googl",
+   "value": 46.44
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign funds & retail",
+   "origin": "googl",
+   "value": 232.20000000000002
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Offshore vehicles",
+   "origin": "googl",
+   "value": 104.49
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "googl",
+   "value": 92.88
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Founders & insiders",
+   "origin": "msft",
+   "value": 173.25
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "msft",
+   "value": 173.25
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 173.25
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Index funds",
+   "origin": "msft",
+   "value": 1155.0
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US taxable accounts",
+   "origin": "msft",
+   "value": 311.85
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 260.491
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 281.33028
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 395.94632
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 98.98658
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 5.209820000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "msft",
+   "value": 485.09999999999997
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 20.234060000000003
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 111.28733
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 505.8515
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 343.97902
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 30.351090000000003
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "msft",
+   "value": 103.95
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 5.5722975
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 20.4317575
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 144.879735
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 189.45811500000002
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 11.144595
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Endowments & foundations",
+   "origin": "msft",
+   "value": 23.1
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "msft",
+   "value": 117.9255
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "msft",
+   "value": 46.2
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "msft",
+   "value": 266.7665
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "msft",
+   "value": 80.85000000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 3.7023525000000004
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 18.5117625
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 116.00704500000002
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 98.72940000000003
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 9.87294
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "msft",
+   "value": 69.3
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 54.510225
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 90.85037500000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 145.36060000000003
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 61.77825500000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 10.902045000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Offshore vehicles",
+   "origin": "msft",
+   "value": 11.55
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 17.6909425
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 13.420715000000001
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 22.5712025
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "msft",
+   "value": 25.0113325
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "msft",
+   "value": 1.8300975
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "msft",
+   "value": 14.64078
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "msft",
+   "value": 26.841430000000003
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "msft",
+   "value": 23.1
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "msft",
+   "value": 80.8038
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "msft",
+   "value": 47.135549999999995
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "msft",
+   "value": 6.733650000000001
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Active managers",
+   "origin": "msft",
+   "value": 1220.45
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US taxable accounts",
+   "origin": "msft",
+   "value": 341.72600000000006
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "msft",
+   "value": 414.95300000000003
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US DB pensions & insurance",
+   "origin": "msft",
+   "value": 158.6585
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Endowments & foundations",
+   "origin": "msft",
+   "value": 36.6135
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign sovereign & official",
+   "origin": "msft",
+   "value": 61.02250000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "msft",
+   "value": 85.43150000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign funds & retail",
+   "origin": "msft",
+   "value": 85.43150000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Offshore vehicles",
+   "origin": "msft",
+   "value": 12.204500000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "msft",
+   "value": 24.409000000000002
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Pensions, insurers & SWFs",
+   "origin": "msft",
+   "value": 192.5
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "msft",
+   "value": 7.7
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US DB pensions & insurance",
+   "origin": "msft",
+   "value": 77.0
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Endowments & foundations",
+   "origin": "msft",
+   "value": 3.85
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign sovereign & official",
+   "origin": "msft",
+   "value": 69.3
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "msft",
+   "value": 34.65
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Hedge funds",
+   "origin": "msft",
+   "value": 77.0
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US taxable accounts",
+   "origin": "msft",
+   "value": 16.94
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "msft",
+   "value": 0.77
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "msft",
+   "value": 21.560000000000002
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Endowments & foundations",
+   "origin": "msft",
+   "value": 13.090000000000002
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "msft",
+   "value": 7.7
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "msft",
+   "value": 4.62
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "msft",
+   "value": 2.31
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Offshore vehicles",
+   "origin": "msft",
+   "value": 5.390000000000001
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "msft",
+   "value": 4.62
+  },
+  {
+   "source": "C:msft",
+   "target": "H:Retail & other direct",
+   "origin": "msft",
+   "value": 1031.8
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US taxable accounts",
+   "origin": "msft",
+   "value": 371.448
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "msft",
+   "value": 103.18
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US DB pensions & insurance",
+   "origin": "msft",
+   "value": 10.318
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Endowments & foundations",
+   "origin": "msft",
+   "value": 41.272
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign sovereign & official",
+   "origin": "msft",
+   "value": 82.544
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "msft",
+   "value": 41.272
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign funds & retail",
+   "origin": "msft",
+   "value": 206.36
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Offshore vehicles",
+   "origin": "msft",
+   "value": 92.862
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "msft",
+   "value": 82.544
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Founders & insiders",
+   "origin": "amzn",
+   "value": 238.48000000000002
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "amzn",
+   "value": 238.48000000000002
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 238.48000000000002
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Index funds",
+   "origin": "amzn",
+   "value": 704.6
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US taxable accounts",
+   "origin": "amzn",
+   "value": 190.24200000000002
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 176.5294
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 190.651752
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 268.32468800000004
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 67.08117200000001
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 3.530588
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "amzn",
+   "value": 295.932
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 12.746756000000003
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 70.107158
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 318.6689
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 216.69485200000003
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 19.120134
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "amzn",
+   "value": 63.414
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 3.689394
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 13.527778
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 95.92424400000002
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 125.43939599999999
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 7.378788
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Endowments & foundations",
+   "origin": "amzn",
+   "value": 14.092
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "amzn",
+   "value": 85.1211
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "amzn",
+   "value": 28.184
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "amzn",
+   "value": 186.5835
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "amzn",
+   "value": 49.32200000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 2.4467235
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 12.233617500000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 76.664003
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 65.24596000000001
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 6.524596000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "amzn",
+   "value": 42.275999999999996
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 38.572784999999996
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 64.28797499999999
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 102.86076
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 43.715823
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 7.714556999999999
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Offshore vehicles",
+   "origin": "amzn",
+   "value": 7.046
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 13.368158999999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 10.141361999999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 17.055926999999997
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "amzn",
+   "value": 18.899811
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "amzn",
+   "value": 1.3829129999999998
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "amzn",
+   "value": 11.063303999999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "amzn",
+   "value": 20.282723999999998
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "amzn",
+   "value": 14.092
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "amzn",
+   "value": 58.763639999999995
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "amzn",
+   "value": 34.27879
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "amzn",
+   "value": 4.89697
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Active managers",
+   "origin": "amzn",
+   "value": 750.67
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US taxable accounts",
+   "origin": "amzn",
+   "value": 210.1876
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "amzn",
+   "value": 255.2278
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US DB pensions & insurance",
+   "origin": "amzn",
+   "value": 97.58709999999999
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Endowments & foundations",
+   "origin": "amzn",
+   "value": 22.5201
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign sovereign & official",
+   "origin": "amzn",
+   "value": 37.5335
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "amzn",
+   "value": 52.5469
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign funds & retail",
+   "origin": "amzn",
+   "value": 52.5469
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Offshore vehicles",
+   "origin": "amzn",
+   "value": 7.5066999999999995
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "amzn",
+   "value": 15.013399999999999
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Pensions, insurers & SWFs",
+   "origin": "amzn",
+   "value": 135.5
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "amzn",
+   "value": 5.42
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US DB pensions & insurance",
+   "origin": "amzn",
+   "value": 54.2
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Endowments & foundations",
+   "origin": "amzn",
+   "value": 2.71
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign sovereign & official",
+   "origin": "amzn",
+   "value": 48.78
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "amzn",
+   "value": 24.39
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Hedge funds",
+   "origin": "amzn",
+   "value": 81.3
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US taxable accounts",
+   "origin": "amzn",
+   "value": 17.886
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "amzn",
+   "value": 0.813
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "amzn",
+   "value": 22.764000000000003
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Endowments & foundations",
+   "origin": "amzn",
+   "value": 13.821
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "amzn",
+   "value": 8.13
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "amzn",
+   "value": 4.877999999999999
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "amzn",
+   "value": 2.4389999999999996
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Offshore vehicles",
+   "origin": "amzn",
+   "value": 5.691000000000001
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "amzn",
+   "value": 4.877999999999999
+  },
+  {
+   "source": "C:amzn",
+   "target": "H:Retail & other direct",
+   "origin": "amzn",
+   "value": 799.4499999999999
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US taxable accounts",
+   "origin": "amzn",
+   "value": 287.80199999999996
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "amzn",
+   "value": 79.945
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US DB pensions & insurance",
+   "origin": "amzn",
+   "value": 7.9944999999999995
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Endowments & foundations",
+   "origin": "amzn",
+   "value": 31.977999999999998
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign sovereign & official",
+   "origin": "amzn",
+   "value": 63.955999999999996
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "amzn",
+   "value": 31.977999999999998
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign funds & retail",
+   "origin": "amzn",
+   "value": 159.89
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Offshore vehicles",
+   "origin": "amzn",
+   "value": 71.95049999999999
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "amzn",
+   "value": 63.955999999999996
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Founders & insiders",
+   "origin": "meta",
+   "value": 253.8
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "meta",
+   "value": 253.8
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 253.8
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Index funds",
+   "origin": "meta",
+   "value": 470.0
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US taxable accounts",
+   "origin": "meta",
+   "value": 126.9
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 115.10300000000001
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 124.31124000000003
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 174.95656000000002
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 43.739140000000006
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 2.30206
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "meta",
+   "value": 197.4
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 8.633712000000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 47.48541600000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 215.84280000000007
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 146.77310400000002
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 12.950568
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "meta",
+   "value": 42.3
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 2.52108
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 9.24396
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 65.54808000000001
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 85.71672000000001
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 5.04216
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Endowments & foundations",
+   "origin": "meta",
+   "value": 9.4
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "meta",
+   "value": 55.836
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "meta",
+   "value": 18.8
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "meta",
+   "value": 121.0344
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "meta",
+   "value": 32.900000000000006
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 1.6316519999999999
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 8.15826
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 51.125096
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 43.510720000000006
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 4.351072
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "meta",
+   "value": 28.2
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 24.342240000000004
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 40.57040000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 64.91264000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 27.587872000000004
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 4.868448000000001
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Offshore vehicles",
+   "origin": "meta",
+   "value": 4.7
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 8.216164
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 6.232952
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 10.482692
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "meta",
+   "value": 11.615956
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "meta",
+   "value": 0.8499479999999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "meta",
+   "value": 6.799583999999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "meta",
+   "value": 12.465904
+  },
+  {
+   "source": "H:Index funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "meta",
+   "value": 9.4
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "meta",
+   "value": 36.86304
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "meta",
+   "value": 21.503439999999998
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "meta",
+   "value": 3.07192
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Active managers",
+   "origin": "meta",
+   "value": 537.6800000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US taxable accounts",
+   "origin": "meta",
+   "value": 150.55040000000002
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "meta",
+   "value": 182.81120000000004
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:US DB pensions & insurance",
+   "origin": "meta",
+   "value": 69.89840000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Endowments & foundations",
+   "origin": "meta",
+   "value": 16.1304
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign sovereign & official",
+   "origin": "meta",
+   "value": 26.884000000000004
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "meta",
+   "value": 37.637600000000006
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign funds & retail",
+   "origin": "meta",
+   "value": 37.637600000000006
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Offshore vehicles",
+   "origin": "meta",
+   "value": 5.376800000000001
+  },
+  {
+   "source": "H:Active managers",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "meta",
+   "value": 10.753600000000002
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Pensions, insurers & SWFs",
+   "origin": "meta",
+   "value": 88.36
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "meta",
+   "value": 3.5344
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:US DB pensions & insurance",
+   "origin": "meta",
+   "value": 35.344
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Endowments & foundations",
+   "origin": "meta",
+   "value": 1.7672
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign sovereign & official",
+   "origin": "meta",
+   "value": 31.8096
+  },
+  {
+   "source": "H:Pensions, insurers & SWFs",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "meta",
+   "value": 15.9048
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Hedge funds",
+   "origin": "meta",
+   "value": 56.4
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US taxable accounts",
+   "origin": "meta",
+   "value": 12.408
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "meta",
+   "value": 0.564
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "meta",
+   "value": 15.792000000000002
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Endowments & foundations",
+   "origin": "meta",
+   "value": 9.588000000000001
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "meta",
+   "value": 5.640000000000001
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "meta",
+   "value": 3.384
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "meta",
+   "value": 1.692
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Offshore vehicles",
+   "origin": "meta",
+   "value": 3.9480000000000004
+  },
+  {
+   "source": "H:Hedge funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "meta",
+   "value": 3.384
+  },
+  {
+   "source": "C:meta",
+   "target": "H:Retail & other direct",
+   "origin": "meta",
+   "value": 473.76
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US taxable accounts",
+   "origin": "meta",
+   "value": 170.5536
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "meta",
+   "value": 47.376000000000005
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:US DB pensions & insurance",
+   "origin": "meta",
+   "value": 4.7376
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Endowments & foundations",
+   "origin": "meta",
+   "value": 18.9504
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign sovereign & official",
+   "origin": "meta",
+   "value": 37.9008
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "meta",
+   "value": 18.9504
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign funds & retail",
+   "origin": "meta",
+   "value": 94.75200000000001
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Offshore vehicles",
+   "origin": "meta",
+   "value": 42.6384
+  },
+  {
+   "source": "H:Retail & other direct",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "meta",
+   "value": 37.9008
+  },
+  {
+   "source": "C:anthropic",
+   "target": "H:Founders & insiders",
+   "origin": "anthropic",
+   "value": 77.2
+  },
+  {
+   "source": "H:Founders & insiders",
+   "target": "B:Founder stakes",
+   "origin": "anthropic",
+   "value": 77.2
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 104.39563000000001
+  },
+  {
+   "source": "C:anthropic",
+   "target": "H:Big Tech strategic stakes",
+   "origin": "anthropic",
+   "value": 353.19
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Founder stakes",
+   "origin": "anthropic",
+   "value": 27.195630000000005
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US taxable accounts",
+   "origin": "anthropic",
+   "value": 92.88897000000003
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 42.7152425
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 46.13246190000001
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 64.92716860000002
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 16.231792150000004
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 0.8543048500000001
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "anthropic",
+   "value": 86.88474000000002
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 1.8156668000000005
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 9.986167400000003
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 45.39167000000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 30.86633560000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 2.7235002000000006
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US DB pensions & insurance",
+   "origin": "anthropic",
+   "value": 32.493480000000005
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 1.4230661999999998
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 5.2179094
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 36.9997212
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 48.384250800000004
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 2.8461323999999997
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Endowments & foundations",
+   "origin": "anthropic",
+   "value": 10.948890000000002
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "anthropic",
+   "value": 88.92089
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign sovereign & official",
+   "origin": "anthropic",
+   "value": 24.016920000000002
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "anthropic",
+   "value": 86.39452
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "anthropic",
+   "value": 21.544590000000003
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 0.67404285
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 3.37021425
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 21.1200093
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 17.974476000000003
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 1.7974476
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign funds & retail",
+   "origin": "anthropic",
+   "value": 33.19986000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 8.488719
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 14.147865000000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 22.636584000000003
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 9.620548200000002
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 1.6977438
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Offshore vehicles",
+   "origin": "anthropic",
+   "value": 11.65527
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 5.081796149999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 3.855155699999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 6.483670949999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 7.184608349999999
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "anthropic",
+   "value": 0.52570305
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "anthropic",
+   "value": 4.2056244
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "anthropic",
+   "value": 7.710311399999998
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "anthropic",
+   "value": 12.361650000000001
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 28.469429999999996
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 16.6071675
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 2.3724524999999996
+  },
+  {
+   "source": "C:anthropic",
+   "target": "H:VC & growth funds",
+   "origin": "anthropic",
+   "value": 389.85999999999996
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US taxable accounts",
+   "origin": "anthropic",
+   "value": 77.972
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "anthropic",
+   "value": 3.8985999999999996
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "anthropic",
+   "value": 62.377599999999994
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Endowments & foundations",
+   "origin": "anthropic",
+   "value": 77.972
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "anthropic",
+   "value": 62.377599999999994
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "anthropic",
+   "value": 23.391599999999997
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "anthropic",
+   "value": 23.391599999999997
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Offshore vehicles",
+   "origin": "anthropic",
+   "value": 23.391599999999997
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "anthropic",
+   "value": 35.087399999999995
+  },
+  {
+   "source": "C:anthropic",
+   "target": "H:Employee equity pools",
+   "origin": "anthropic",
+   "value": 144.75
+  },
+  {
+   "source": "H:Employee equity pools",
+   "target": "B:Employee holdings",
+   "origin": "anthropic",
+   "value": 144.75
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Top 0.1%",
+   "origin": "anthropic",
+   "value": 65.1375
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 0.9%",
+   "origin": "anthropic",
+   "value": 50.662499999999994
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 9%",
+   "origin": "anthropic",
+   "value": 26.055
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 40%",
+   "origin": "anthropic",
+   "value": 2.895
+  },
+  {
+   "source": "C:openai",
+   "target": "H:Big Tech strategic stakes",
+   "origin": "openai",
+   "value": 285.42
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Founder stakes",
+   "origin": "openai",
+   "value": 21.977340000000005
+  },
+  {
+   "source": "B:Founder stakes",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 21.977340000000005
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US taxable accounts",
+   "origin": "openai",
+   "value": 75.06546000000003
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 28.56436500000001
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 30.849514200000012
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 43.417834800000016
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 10.854458700000004
+  },
+  {
+   "source": "B:US taxable accounts",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 0.5712873000000002
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "openai",
+   "value": 70.21332000000002
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 1.4434584000000004
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 7.939021200000003
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 36.08646000000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 24.53879280000001
+  },
+  {
+   "source": "B:US 401(k)s & IRAs",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 2.1651876000000003
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:US DB pensions & insurance",
+   "origin": "openai",
+   "value": 26.258640000000003
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 0.8641836
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 3.1686732000000006
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 22.468773600000006
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 29.382242400000003
+  },
+  {
+   "source": "B:US DB pensions & insurance",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 1.7283672
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Endowments & foundations",
+   "origin": "openai",
+   "value": 8.848020000000002
+  },
+  {
+   "source": "B:Endowments & foundations",
+   "target": "K:Nonprofits",
+   "origin": "openai",
+   "value": 256.78002000000004
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign sovereign & official",
+   "origin": "openai",
+   "value": 19.40856
+  },
+  {
+   "source": "B:Foreign sovereign & official",
+   "target": "K:Public / sovereign",
+   "origin": "openai",
+   "value": 50.76216000000001
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "openai",
+   "value": 17.41062
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 0.43752330000000006
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 2.1876165
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 13.709063400000002
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 11.667288000000003
+  },
+  {
+   "source": "B:Foreign pensions & insurers",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 1.1667288
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign funds & retail",
+   "origin": "openai",
+   "value": 26.829480000000004
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 5.788062
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 9.64677
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 15.434832000000004
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 6.559803600000001
+  },
+  {
+   "source": "B:Foreign funds & retail",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 1.1576124
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Offshore vehicles",
+   "origin": "openai",
+   "value": 9.41886
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 3.0705867
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 2.3294106
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 3.9176450999999997
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 4.3411743
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Bottom 50%",
+   "origin": "openai",
+   "value": 0.31764689999999995
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Public / sovereign",
+   "origin": "openai",
+   "value": 2.5411751999999996
+  },
+  {
+   "source": "B:Offshore vehicles",
+   "target": "K:Nonprofits",
+   "origin": "openai",
+   "value": 4.6588212
+  },
+  {
+   "source": "H:Big Tech strategic stakes",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "openai",
+   "value": 9.989700000000001
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 16.57566
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 9.669134999999999
+  },
+  {
+   "source": "B:Foreign family offices & HNW",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 1.381305
+  },
+  {
+   "source": "C:openai",
+   "target": "H:VC & growth funds",
+   "origin": "openai",
+   "value": 195.96
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US taxable accounts",
+   "origin": "openai",
+   "value": 39.19200000000001
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US 401(k)s & IRAs",
+   "origin": "openai",
+   "value": 1.9596000000000002
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:US DB pensions & insurance",
+   "origin": "openai",
+   "value": 31.353600000000004
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Endowments & foundations",
+   "origin": "openai",
+   "value": 39.19200000000001
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign sovereign & official",
+   "origin": "openai",
+   "value": 31.353600000000004
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign pensions & insurers",
+   "origin": "openai",
+   "value": 11.7576
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign funds & retail",
+   "origin": "openai",
+   "value": 11.7576
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Offshore vehicles",
+   "origin": "openai",
+   "value": 11.7576
+  },
+  {
+   "source": "H:VC & growth funds",
+   "target": "B:Foreign family offices & HNW",
+   "origin": "openai",
+   "value": 17.6364
+  },
+  {
+   "source": "C:openai",
+   "target": "H:Employee equity pools",
+   "origin": "openai",
+   "value": 161.88
+  },
+  {
+   "source": "H:Employee equity pools",
+   "target": "B:Employee holdings",
+   "origin": "openai",
+   "value": 161.88
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Top 0.1%",
+   "origin": "openai",
+   "value": 72.846
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 0.9%",
+   "origin": "openai",
+   "value": 56.657999999999994
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 9%",
+   "origin": "openai",
+   "value": 29.138399999999997
+  },
+  {
+   "source": "B:Employee holdings",
+   "target": "K:Next 40%",
+   "origin": "openai",
+   "value": 3.2376
+  },
+  {
+   "source": "C:openai",
+   "target": "H:Nonprofit parent",
+   "origin": "openai",
+   "value": 208.74
+  },
+  {
+   "source": "H:Nonprofit parent",
+   "target": "B:Endowments & foundations",
+   "origin": "openai",
+   "value": 208.74
+  }
+ ],
+ "buckets_busd": {
+  "all": {
+   "Top 0.1%": 3906.1492125000022,
+   "Next 0.9%": 2968.3464783500003,
+   "Next 9%": 6469.4448599500065,
+   "Next 40%": 3918.428426399999,
+   "Bottom 50%": 331.49398659999997,
+   "Public / sovereign": 1466.3339316000006,
+   "Nonprofits": 1056.8031046
+  },
+  "us": {
+   "Top 0.1%": 3081.281623,
+   "Next 0.9%": 2094.521017799999,
+   "Next 9%": 5019.621949200004,
+   "Next 40%": 2995.3086634500005,
+   "Bottom 50%": 219.0816265500001,
+   "Public / sovereign": 0.0,
+   "Nonprofits": 910.8649099999999
+  },
+  "foreign": {
+   "Top 0.1%": 824.8675895000001,
+   "Next 0.9%": 873.8254605499997,
+   "Next 9%": 1449.82291075,
+   "Next 40%": 923.1197629499999,
+   "Bottom 50%": 112.41236005000002,
+   "Public / sovereign": 1466.3339316000006,
+   "Nonprofits": 145.9381946
+  }
+ },
+ "buckets_pct_of_total": {
+  "all": {
+   "Top 0.1%": 19.42,
+   "Next 0.9%": 14.76,
+   "Next 9%": 32.16,
+   "Next 40%": 19.48,
+   "Bottom 50%": 1.65,
+   "Public / sovereign": 7.29,
+   "Nonprofits": 5.25
+  },
+  "us": {
+   "Top 0.1%": 15.32,
+   "Next 0.9%": 10.41,
+   "Next 9%": 24.95,
+   "Next 40%": 14.89,
+   "Bottom 50%": 1.09,
+   "Public / sovereign": 0.0,
+   "Nonprofits": 4.53
+  },
+  "foreign": {
+   "Top 0.1%": 4.1,
+   "Next 0.9%": 4.34,
+   "Next 9%": 7.21,
+   "Next 40%": 4.59,
+   "Bottom 50%": 0.56,
+   "Public / sovereign": 7.29,
+   "Nonprofits": 0.73
+  }
+ }
+}

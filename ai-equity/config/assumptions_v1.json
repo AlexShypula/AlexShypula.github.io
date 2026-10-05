@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "version": "v1-heuristic",
+    "created": "2026-10-05",
+    "note": "All shares are percentages; each row is normalized to 100 at compute time. Values in $B.",
+    "layers": [
+      "company",
+      "holder_type",
+      "beneficiary_account",
+      "wealth_bucket"
+    ],
+    "bucket_definition": "Wealth percentile within the household's own country; 'Public / sovereign' and 'Nonprofits' are non-household owners.",
+    "confidence": {
+      "company_values": "medium (public caps approximate mid-2026; private = last round post-money)",
+      "public_holder_mix": "low-medium (13F-style heuristic, insider stakes approximate)",
+      "private_holder_mix": "low (cap tables not public; illustrative)",
+      "holder_to_beneficiary": "low (look-through guesses anchored loosely to TPC and TIC)",
+      "beneficiary_to_bucket": "US taxable row = Fed DFA Q3 2025; other rows are guesses"
+    },
+    "description": "v1 heuristic set from the Oct 2026 handoff. Every matrix row is a hand-set guess; only the US-taxable row is data (Fed DFA Q3 2025). Kept as the fallback prior and regression baseline.",
+    "layer_notes": {
+      "company": "Values in $B. Public firms: rough mid-2026 market caps; insider stakes from proxy-style figures; the institutional split is a 13F-style heuristic. Private labs: last round post-money (OpenAI, March 2026; Anthropic, May 2026). Their cap tables aren't public, so these splits are illustrative.",
+      "holder_to_beneficiary": "Look-through from intermediaries to the accounts behind them. The five foreign columns follow the TIC survey's rough shape: about a sixth official, with the UK, Cayman and Canada as the largest holder countries. Index and active funds are mostly 401(k)/IRA money; \"Retail & other direct\" also absorbs the non-13F residual, which includes many foreign holders. Big Tech strategic stakes are passed through using a blended megacap holder mix rather than drawn as a loop.",
+      "beneficiary_to_bucket": "US taxable accounts use the Fed DFA equity distribution directly. Retirement and DB pension rows are flatter, SCF-informed guesses. Employee equity at these valuations lands almost entirely in the top 1% by construction. Foreign rows are percentiles within the holder's own country. Foreign pensions are flatter than US ones because Canadian, Dutch, Nordic and Japanese systems are close to universal. Offshore vehicles send a quarter to \"Nonprofits\" because US endowments often invest through Cayman feeder funds."
+    },
+    "method": [
+      "Each dollar of company value is split by holder type, then by the beneficiary accounts behind each holder type, then by the wealth percentile of the households holding those accounts. Flows keep the color of the company they started in, so you can see how each firm's value disperses.",
+      "Anchors: Fed DFA Q3 2025 (top 1% hold 50.2% of household corporate equities and mutual funds; 90th–99th percentiles 37.2%; 50th–90th 11.6%). Tax Policy Center (Rosenthal and Burke) estimated foreigners own about 40% of US corporate equity overall; that figure includes direct investment stakes, so megacap defaults here sit nearer 30%.",
+      "Foreign split: the June 2025 TIC survey puts foreign portfolio holdings of US equities near $13.8T, about $2.2T of it held by official institutions, with the UK, Cayman Islands and Canada each near $2.1T. Cayman and UK figures reflect custody location, not the nationality of the final owner, so those rows are the loosest guesses here. Percentiles are within each country, so the \"Next 40%\" in Canada is far richer globally than the bottom 50% anywhere.",
+      "Not modeled: dual-class voting control (economic shares only), liquidation preferences on private stock, founder charitable pledges, cross-holdings beyond the strategic-stake shortcut, and the difference between wealth and income percentiles. Treat outputs as order-of-magnitude, not estimates."
+    ]
+  },
+  "holder_types": [
+    "Founders & insiders",
+    "Index funds",
+    "Active managers",
+    "Pensions, insurers & SWFs",
+    "Hedge funds",
+    "Retail & other direct",
+    "Big Tech strategic stakes",
+    "VC & growth funds",
+    "Employee equity pools",
+    "Nonprofit parent"
+  ],
+  "beneficiary_accounts": [
+    "Founder stakes",
+    "Employee holdings",
+    "US taxable accounts",
+    "US 401(k)s & IRAs",
+    "US DB pensions & insurance",
+    "Endowments & foundations",
+    "Foreign sovereign & official",
+    "Foreign pensions & insurers",
+    "Foreign funds & retail",
+    "Offshore vehicles",
+    "Foreign family offices & HNW"
+  ],
+  "beneficiary_is_us": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "wealth_buckets": [
+    "Top 0.1%",
+    "Next 0.9%",
+    "Next 9%",
+    "Next 40%",
+    "Bottom 50%",
+    "Public / sovereign",
+    "Nonprofits"
+  ],
+  "wealth_bucket_labels": [
+    "Top 0.1% of US households",
+    "99th–99.9th percentile",
+    "90th–99th percentile",
+    "50th–90th percentile",
+    "Bottom 50%",
+    "States & sovereign funds",
+    "Endowments & foundations"
+  ],
+  "companies": [
+    {
+      "id": "nvda",
+      "name": "Nvidia",
+      "value_busd": 5000,
+      "color": "#4F7A28",
+      "holder_mix": {
+        "Founders & insiders": 4,
+        "Index funds": 22,
+        "Active managers": 25,
+        "Pensions, insurers & SWFs": 9,
+        "Hedge funds": 5,
+        "Retail & other direct": 35,
+        "Big Tech strategic stakes": 0,
+        "VC & growth funds": 0,
+        "Employee equity pools": 0,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "googl",
+      "name": "Alphabet",
+      "value_busd": 4500,
+      "color": "#C4842A",
+      "holder_mix": {
+        "Founders & insiders": 12,
+        "Index funds": 20,
+        "Active managers": 25,
+        "Pensions, insurers & SWFs": 8,
+        "Hedge funds": 5,
+        "Retail & other direct": 30,
+        "Big Tech strategic stakes": 0,
+        "VC & growth funds": 0,
+        "Employee equity pools": 0,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "msft",
+      "name": "Microsoft",
+      "value_busd": 3300,
+      "color": "#2F6FA8",
+      "holder_mix": {
+        "Founders & insiders": 5,
+        "Index funds": 24,
+        "Active managers": 28,
+        "Pensions, insurers & SWFs": 10,
+        "Hedge funds": 4,
+        "Retail & other direct": 29,
+        "Big Tech strategic stakes": 0,
+        "VC & growth funds": 0,
+        "Employee equity pools": 0,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "amzn",
+      "name": "Amazon",
+      "value_busd": 2700,
+      "color": "#8A5A9E",
+      "holder_mix": {
+        "Founders & insiders": 9,
+        "Index funds": 21,
+        "Active managers": 28,
+        "Pensions, insurers & SWFs": 8,
+        "Hedge funds": 5,
+        "Retail & other direct": 29,
+        "Big Tech strategic stakes": 0,
+        "VC & growth funds": 0,
+        "Employee equity pools": 0,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "value_busd": 1500,
+      "color": "#2D8C8C",
+      "holder_mix": {
+        "Founders & insiders": 13,
+        "Index funds": 21,
+        "Active managers": 27,
+        "Pensions, insurers & SWFs": 8,
+        "Hedge funds": 5,
+        "Retail & other direct": 26,
+        "Big Tech strategic stakes": 0,
+        "VC & growth funds": 0,
+        "Employee equity pools": 0,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "value_busd": 965,
+      "color": "#A34E6B",
+      "holder_mix": {
+        "Founders & insiders": 0,
+        "Index funds": 0,
+        "Active managers": 0,
+        "Pensions, insurers & SWFs": 0,
+        "Hedge funds": 0,
+        "Retail & other direct": 0,
+        "Big Tech strategic stakes": 25,
+        "VC & growth funds": 45,
+        "Employee equity pools": 30,
+        "Nonprofit parent": 0
+      }
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "value_busd": 852,
+      "color": "#5E6672",
+      "holder_mix": {
+        "Founders & insiders": 0,
+        "Index funds": 0,
+        "Active managers": 0,
+        "Pensions, insurers & SWFs": 0,
+        "Hedge funds": 0,
+        "Retail & other direct": 0,
+        "Big Tech strategic stakes": 33,
+        "VC & growth funds": 23,
+        "Employee equity pools": 18,
+        "Nonprofit parent": 26
+      }
+    }
+  ],
+  "holder_to_beneficiary": {
+    "Founders & insiders": {
+      "Founder stakes": 100,
+      "Employee holdings": 0,
+      "US taxable accounts": 0,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 0,
+      "Endowments & foundations": 0,
+      "Foreign sovereign & official": 0,
+      "Foreign pensions & insurers": 0,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 0,
+      "Foreign family offices & HNW": 0
+    },
+    "Index funds": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 20,
+      "US 401(k)s & IRAs": 40,
+      "US DB pensions & insurance": 10,
+      "Endowments & foundations": 5,
+      "Foreign sovereign & official": 3,
+      "Foreign pensions & insurers": 6,
+      "Foreign funds & retail": 12,
+      "Offshore vehicles": 2,
+      "Foreign family offices & HNW": 2
+    },
+    "Active managers": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 20,
+      "US 401(k)s & IRAs": 30,
+      "US DB pensions & insurance": 15,
+      "Endowments & foundations": 5,
+      "Foreign sovereign & official": 4,
+      "Foreign pensions & insurers": 8,
+      "Foreign funds & retail": 12,
+      "Offshore vehicles": 3,
+      "Foreign family offices & HNW": 3
+    },
+    "Pensions, insurers & SWFs": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 0,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 50,
+      "Endowments & foundations": 10,
+      "Foreign sovereign & official": 18,
+      "Foreign pensions & insurers": 20,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 0,
+      "Foreign family offices & HNW": 2
+    },
+    "Hedge funds": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 30,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 15,
+      "Endowments & foundations": 20,
+      "Foreign sovereign & official": 2,
+      "Foreign pensions & insurers": 3,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 25,
+      "Foreign family offices & HNW": 5
+    },
+    "Retail & other direct": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 45,
+      "US 401(k)s & IRAs": 15,
+      "US DB pensions & insurance": 0,
+      "Endowments & foundations": 0,
+      "Foreign sovereign & official": 8,
+      "Foreign pensions & insurers": 8,
+      "Foreign funds & retail": 10,
+      "Offshore vehicles": 7,
+      "Foreign family offices & HNW": 7
+    },
+    "Big Tech strategic stakes": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 22,
+      "US 401(k)s & IRAs": 28,
+      "US DB pensions & insurance": 10,
+      "Endowments & foundations": 5,
+      "Foreign sovereign & official": 5,
+      "Foreign pensions & insurers": 8,
+      "Foreign funds & retail": 12,
+      "Offshore vehicles": 5,
+      "Foreign family offices & HNW": 5
+    },
+    "VC & growth funds": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 30,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 15,
+      "Endowments & foundations": 20,
+      "Foreign sovereign & official": 15,
+      "Foreign pensions & insurers": 5,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 10,
+      "Foreign family offices & HNW": 5
+    },
+    "Employee equity pools": {
+      "Founder stakes": 0,
+      "Employee holdings": 100,
+      "US taxable accounts": 0,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 0,
+      "Endowments & foundations": 0,
+      "Foreign sovereign & official": 0,
+      "Foreign pensions & insurers": 0,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 0,
+      "Foreign family offices & HNW": 0
+    },
+    "Nonprofit parent": {
+      "Founder stakes": 0,
+      "Employee holdings": 0,
+      "US taxable accounts": 0,
+      "US 401(k)s & IRAs": 0,
+      "US DB pensions & insurance": 0,
+      "Endowments & foundations": 100,
+      "Foreign sovereign & official": 0,
+      "Foreign pensions & insurers": 0,
+      "Foreign funds & retail": 0,
+      "Offshore vehicles": 0,
+      "Foreign family offices & HNW": 0
+    }
+  },
+  "beneficiary_to_bucket": {
+    "Founder stakes": {
+      "Top 0.1%": 100,
+      "Next 0.9%": 0,
+      "Next 9%": 0,
+      "Next 40%": 0,
+      "Bottom 50%": 0,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "Employee holdings": {
+      "Top 0.1%": 45,
+      "Next 0.9%": 40,
+      "Next 9%": 13,
+      "Next 40%": 2,
+      "Bottom 50%": 0,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "US taxable accounts": {
+      "Top 0.1%": 24.2,
+      "Next 0.9%": 26,
+      "Next 9%": 37.2,
+      "Next 40%": 11.6,
+      "Bottom 50%": 1,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "US 401(k)s & IRAs": {
+      "Top 0.1%": 5,
+      "Next 0.9%": 12,
+      "Next 9%": 45,
+      "Next 40%": 33,
+      "Bottom 50%": 5,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "US DB pensions & insurance": {
+      "Top 0.1%": 2,
+      "Next 0.9%": 5,
+      "Next 9%": 28,
+      "Next 40%": 47,
+      "Bottom 50%": 18,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "Endowments & foundations": {
+      "Top 0.1%": 0,
+      "Next 0.9%": 0,
+      "Next 9%": 0,
+      "Next 40%": 0,
+      "Bottom 50%": 0,
+      "Public / sovereign": 0,
+      "Nonprofits": 100
+    },
+    "Foreign sovereign & official": {
+      "Top 0.1%": 0,
+      "Next 0.9%": 0,
+      "Next 9%": 0,
+      "Next 40%": 0,
+      "Bottom 50%": 0,
+      "Public / sovereign": 100,
+      "Nonprofits": 0
+    },
+    "Foreign pensions & insurers": {
+      "Top 0.1%": 2,
+      "Next 0.9%": 5,
+      "Next 9%": 25,
+      "Next 40%": 45,
+      "Bottom 50%": 23,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "Foreign funds & retail": {
+      "Top 0.1%": 12,
+      "Next 0.9%": 18,
+      "Next 9%": 40,
+      "Next 40%": 25,
+      "Bottom 50%": 5,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    },
+    "Offshore vehicles": {
+      "Top 0.1%": 30,
+      "Next 0.9%": 25,
+      "Next 9%": 15,
+      "Next 40%": 5,
+      "Bottom 50%": 0,
+      "Public / sovereign": 0,
+      "Nonprofits": 25
+    },
+    "Foreign family offices & HNW": {
+      "Top 0.1%": 55,
+      "Next 0.9%": 35,
+      "Next 9%": 10,
+      "Next 40%": 0,
+      "Bottom 50%": 0,
+      "Public / sovereign": 0,
+      "Nonprofits": 0
+    }
+  },
+  "benchmarks": {
+    "fed_dfa_q3_2025_corporate_equities_mutual_funds": {
+      "Top 0.1%": 24.2,
+      "Next 0.9%": 26,
+      "Next 9%": 37.2,
+      "Next 40%": 11.6,
+      "Bottom 50%": 1,
+      "_source": "Federal Reserve Distributional Financial Accounts; excludes pension entitlements",
+      "_label": "Fed DFA: all US household-held equity (Q3 2025)",
+      "_note": "The benchmark is the Fed's Distributional Financial Accounts share of corporate equities and mutual fund shares, Q3 2025. It excludes pension entitlements, so it is closest to the \"US taxable accounts\" channel; retirement accounts make the model's middle look somewhat better than the benchmark."
+    },
+    "tic_june_2025": {
+      "foreign_portfolio_us_equity_busd": 13840,
+      "foreign_official_us_equity_busd": 2227,
+      "uk_busd": 2056,
+      "cayman_busd": 2156,
+      "canada_busd": 2063,
+      "_source": "Treasury SHL annual survey, June 30 2025 (custody country, not ultimate owner)"
+    },
+    "tpc_2019": {
+      "foreign_share_us_corporate_equity": 40,
+      "us_retirement_accounts": 30,
+      "us_taxable_accounts": 25,
+      "_source": "Rosenthal & Burke, Tax Policy Center (2020)"
+    }
+  },
+  "v1_outputs_pct_of_total": {
+    "all": {
+      "Top 0.1%": 19.8,
+      "Next 0.9%": 14.4,
+      "Next 9%": 27.5,
+      "Next 40%": 20.1,
+      "Bottom 50%": 5.3,
+      "Public / sovereign": 5.9,
+      "Nonprofits": 7
+    }
+  }
+}

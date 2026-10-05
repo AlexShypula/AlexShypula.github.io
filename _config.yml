@@ -1,19 +1,27 @@
+title: Alexander Shypula
+description: PhD Student @ UPenn
+author: Alexander Shypula
+url: https://alexshypula.github.io
+theme: minima
 plugins:
   - jekyll-seo-tag
-title: /Alexander_Shypula/ 
-description: PhD Student @ UPenn
-show_downloads: false
+  - jekyll-feed
+twitter_username: alex_shypula
 google_analytics: G-5ZR5HTD4YS
-theme: jekyll-theme-hacker
-remote_theme: pages-themes/hacker@v0.2.0
-tagline: PhD Student @ UPenn
-url: alexshypula.github.io
-author: Alexander Shypula
-twitter:
-  username: alex_shypula
-  card: summary
-logo: /assets/images/lambda.png
 google_site_verification: google-site-verification=WNBy8FTxAbz6FDEOe4DjT0nCYwAh-4Loki4rp0JjXuc
+logo: /assets/images/lambda.png
 
-
-
+# ai-equity/ is a static app (index.html + data/) copied through as-is. Keep its model
+# source out of the built site; docs/ is left in so the audit renders as pages.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - ai-equity/src
+  - ai-equity/config
+  - ai-equity/tables
+  - ai-equity/SPEC.md
+  - ai-equity/README.md
+  - ai-equity/reference_v1.html

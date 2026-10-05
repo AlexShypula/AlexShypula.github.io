@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Who ends up owning AI? An equity pass-through model</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F4; --panel:#F8FAFB; --ink:#17212C; --muted:#586575; --rule:#CBD4DD;
+  --link-dim:0.08; --node:#2A3846; --input-bg:#FFFFFF; --bench:#7B8794;
+  --b0:#13294B; --b1:#2C4A73; --b2:#4F6F98; --b3:#86A1C0; --b4:#BCCDE0; --b5:#9A8F7E; --b6:#B7AFA2;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121820; --panel:#19212B; --ink:#E4E9EE; --muted:#9AA6B3; --rule:#2E3A47;
+    --node:#C9D3DD; --input-bg:#0F151C; --bench:#7F8B98;
+    --b0:#DCE6F2; --b1:#AFC3DB; --b2:#7E9BBF; --b3:#56739A; --b4:#3A5272; --b5:#8C826F; --b6:#6E675C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121820; --panel:#19212B; --ink:#E4E9EE; --muted:#9AA6B3; --rule:#2E3A47;
+  --node:#C9D3DD; --input-bg:#0F151C; --bench:#7F8B98;
+  --b0:#DCE6F2; --b1:#AFC3DB; --b2:#7E9BBF; --b3:#56739A; --b4:#3A5272; --b5:#8C826F; --b6:#6E675C;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+h1{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(28px,4.2vw,44px);line-height:1.1;margin:0 0 10px;letter-spacing:-0.01em;max-width:22ch}
+.lede{color:var(--muted);max-width:68ch;margin:0 0 22px}
+h2{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:22px;margin:0 0 6px}
+h3{font-size:15px;font-weight:600;margin:0 0 4px}
+p.note{color:var(--muted);font-size:13.5px;max-width:72ch;margin:4px 0 12px}
+.controls{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-bottom:12px}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px 5px 9px;font:inherit;font-size:13.5px;cursor:pointer}
+.chip .sw{width:11px;height:11px;border-radius:3px}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip[aria-pressed="false"] .sw{background:transparent!important;outline:1.5px solid var(--muted)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--b2);outline-offset:2px}
+.chart{background:var(--panel);border:1px solid var(--rule);border-radius:10px;overflow-x:auto;position:relative}
+.chart svg{display:block}
+.colhead{font-size:12.5px;fill:var(--muted)}
+.nlabel{font-size:12.5px;fill:var(--ink)}
+.nval{fill:var(--muted)}
+.link{fill:none;transition:stroke-opacity .15s}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:7px 10px;border-radius:6px;font-size:12.5px;line-height:1.4;max-width:280px;opacity:0;transition:opacity .1s;z-index:10}
+.summary{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;margin:30px 0 8px}
+@media (max-width:820px){.summary{grid-template-columns:1fr}}
+.headline{font-family:"Newsreader",Georgia,serif;font-size:21px;line-height:1.4;margin:0 0 10px}
+.bars{display:flex;flex-direction:column;gap:12px}
+.barrow .lbl{font-size:13px;color:var(--muted);margin-bottom:4px}
+.stack{display:flex;height:26px;border-radius:5px;overflow:hidden;border:1px solid var(--rule)}
+.stack div{height:100%;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#fff;white-space:nowrap;overflow:hidden}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted);margin-top:4px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.stat{border-top:2px solid var(--ink);padding-top:6px}
+.stat b{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:26px;display:block;line-height:1.1}
+.stat span{font-size:12.5px;color:var(--muted)}
+details{border-top:1px solid var(--rule);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;font-weight:600;font-size:15.5px}
+summary small{font-weight:400;color:var(--muted);margin-left:6px}
+.tbl{overflow-x:auto;margin-top:10px}
+table{border-collapse:collapse;font-size:12.5px;min-width:100%}
+th,td{padding:4px 5px;text-align:right;white-space:nowrap}
+th{font-weight:500;color:var(--muted);vertical-align:bottom;white-space:normal;min-width:66px;max-width:96px;line-height:1.25}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--bg);min-width:150px}
+tr+tr td{border-top:1px solid var(--rule)}
+td input{width:62px;font:inherit;font-size:12.5px;text-align:right;padding:3px 5px;border:1px solid var(--rule);border-radius:4px;background:var(--input-bg);color:var(--ink)}
+td.sum{color:var(--muted)}
+td.sum.off{color:#B4602A}
+.btn{font:inherit;font-size:13.5px;border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:6px;padding:6px 12px;cursor:pointer}
+.method{max-width:72ch;font-size:14px;color:var(--muted)}
+.method p{margin:0 0 10px}
+@media (prefers-reduced-motion: reduce){.link,.tip{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Who ends up owning AI?</h1>
+  <p class="lede">Equity in the leading AI firms, traced through the institutions that hold it to the households that ultimately own the claim. Every pass-through share below is a heuristic you can edit. Hover a company to follow its value; click one to remove it.</p>
+
+  <div class="controls" id="companyChips" role="group" aria-label="Companies included"></div>
+
+  <div class="chart" id="chart"></div>
+
+  <div class="summary">
+    <div>
+      <h2>Where the value lands</h2>
+      <p class="headline" id="headline"></p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div>
+      <h2>Households, US vs. abroad</h2>
+      <div class="bars" id="bars"></div>
+      <div class="legend" id="bucketLegend"></div>
+      <p class="note">The benchmark is the Fed's Distributional Financial Accounts share of corporate equities and mutual fund shares, Q3 2025. It excludes pension entitlements, so it is closest to the "US taxable accounts" channel; retirement accounts make the model's middle look somewhat better than the benchmark.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:34px">Assumptions</h2>
+  <p class="note">Rows are percentages and are normalized to 100 automatically, so you can type rough numbers. Changes redraw everything.</p>
+
+  <details open>
+    <summary>Company size and holder mix<small>layer 1</small></summary>
+    <p class="note">Values in $B. Public firms: rough mid-2026 market caps; insider stakes from proxy-style figures; the institutional split is a 13F-style heuristic. Private labs: last round post-money (OpenAI, March 2026; Anthropic, May 2026). Their cap tables aren't public, so these splits are illustrative.</p>
+    <div class="tbl" id="tblCompany"></div>
+  </details>
+  <details>
+    <summary>Holder type to beneficiary account<small>layer 2</small></summary>
+    <p class="note">Look-through from intermediaries to the accounts behind them. The five foreign columns follow the TIC survey's rough shape: about a sixth official, with the UK, Cayman and Canada as the largest holder countries. Index and active funds are mostly 401(k)/IRA money; "Retail & other direct" also absorbs the non-13F residual, which includes many foreign holders. Big Tech strategic stakes are passed through using a blended megacap holder mix rather than drawn as a loop.</p>
+    <div class="tbl" id="tblHB"></div>
+  </details>
+  <details>
+    <summary>Beneficiary account to wealth bucket<small>layer 3</small></summary>
+    <p class="note">US taxable accounts use the Fed DFA equity distribution directly. Retirement and DB pension rows are flatter, SCF-informed guesses. Employee equity at these valuations lands almost entirely in the top 1% by construction. Foreign rows are percentiles within the holder's own country. Foreign pensions are flatter than US ones because Canadian, Dutch, Nordic and Japanese systems are close to universal. Offshore vehicles send a quarter to "Nonprofits" because US endowments often invest through Cayman feeder funds.</p>
+    <div class="tbl" id="tblBK"></div>
+  </details>
+  <p style="margin-top:14px"><button class="btn" id="reset">Reset to defaults</button></p>
+
+  <h2 style="margin-top:34px">Method and caveats</h2>
+  <div class="method">
+    <p>Each dollar of company value is split by holder type, then by the beneficiary accounts behind each holder type, then by the wealth percentile of the households holding those accounts. Flows keep the color of the company they started in, so you can see how each firm's value disperses.</p>
+    <p>Anchors: Fed DFA Q3 2025 (top 1% hold 50.2% of household corporate equities and mutual funds; 90th–99th percentiles 37.2%; 50th–90th 11.6%). Tax Policy Center (Rosenthal and Burke) estimated foreigners own about 40% of US corporate equity overall; that figure includes direct investment stakes, so megacap defaults here sit nearer 30%.</p>
+    <p>Foreign split: the June 2025 TIC survey puts foreign portfolio holdings of US equities near $13.8T, about $2.2T of it held by official institutions, with the UK, Cayman Islands and Canada each near $2.1T. Cayman and UK figures reflect custody location, not the nationality of the final owner, so those rows are the loosest guesses here. Percentiles are within each country, so the "Next 40%" in Canada is far richer globally than the bottom 50% anywhere.</p>
+    <p>Not modeled: dual-class voting control (economic shares only), liquidation preferences on private stock, founder charitable pledges, cross-holdings beyond the strategic-stake shortcut, and the difference between wealth and income percentiles. Treat outputs as order-of-magnitude, not estimates.</p>
+  </div>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+<script>
+const HOLDERS=["Founders & insiders","Index funds","Active managers","Pensions, insurers & SWFs","Hedge funds","Retail & other direct","Big Tech strategic stakes","VC & growth funds","Employee equity pools","Nonprofit parent"];
+const BENEF=["Founder stakes","Employee holdings","US taxable accounts","US 401(k)s & IRAs","US DB pensions & insurance","Endowments & foundations","Foreign sovereign & official","Foreign pensions & insurers","Foreign funds & retail","Offshore vehicles","Foreign family offices & HNW"];
+const BENEF_US=[1,1,1,1,1,1,0,0,0,0,0];
+const BUCKETS=["Top 0.1%","Next 0.9%","Next 9%","Next 40%","Bottom 50%","Public / sovereign","Nonprofits"];
+const BUCKET_LONG=["Top 0.1% of US households","99th–99.9th percentile","90th–99th percentile","50th–90th percentile","Bottom 50%","States & sovereign funds","Endowments & foundations"];
+const BUCKET_VARS=["--b0","--b1","--b2","--b3","--b4","--b5","--b6"];
+
+const DEFAULTS={
+  companies:[
+    {id:"nvda",name:"Nvidia",cap:5000,color:"#4F7A28",mix:[4,22,25,9,5,35,0,0,0,0]},
+    {id:"googl",name:"Alphabet",cap:4500,color:"#C4842A",mix:[12,20,25,8,5,30,0,0,0,0]},
+    {id:"msft",name:"Microsoft",cap:3300,color:"#2F6FA8",mix:[5,24,28,10,4,29,0,0,0,0]},
+    {id:"amzn",name:"Amazon",cap:2700,color:"#8A5A9E",mix:[9,21,28,8,5,29,0,0,0,0]},
+    {id:"meta",name:"Meta",cap:1500,color:"#2D8C8C",mix:[13,21,27,8,5,26,0,0,0,0]},
+    {id:"anthropic",name:"Anthropic",cap:965,color:"#A34E6B",mix:[0,0,0,0,0,0,25,45,30,0]},
+    {id:"openai",name:"OpenAI",cap:852,color:"#5E6672",mix:[0,0,0,0,0,0,33,23,18,26]}
+  ],
+  // rows: holders, cols: BENEF
+  hb:[
+    [100,0,0,0,0,0, 0,0,0,0,0],
+    [0,0,20,40,10,5, 3,6,12,2,2],
+    [0,0,20,30,15,5, 4,8,12,3,3],
+    [0,0,0,0,50,10, 18,20,0,0,2],
+    [0,0,30,0,15,20, 2,3,0,25,5],
+    [0,0,45,15,0,0, 8,8,10,7,7],
+    [0,0,22,28,10,5, 5,8,12,5,5],
+    [0,0,30,0,15,20, 15,5,0,10,5],
+    [0,100,0,0,0,0, 0,0,0,0,0],
+    [0,0,0,0,0,100, 0,0,0,0,0]
+  ],
+  // rows: BENEF, cols: BUCKETS
+  bk:[
+    [100,0,0,0,0,0,0],
+    [45,40,13,2,0,0,0],
+    [24.2,26,37.2,11.6,1,0,0],
+    [5,12,45,33,5,0,0],
+    [2,5,28,47,18,0,0],
+    [0,0,0,0,0,0,100],
+    [0,0,0,0,0,100,0],
+    [2,5,25,45,23,0,0],
+    [12,18,40,25,5,0,0],
+    [30,25,15,5,0,0,25],
+    [55,35,10,0,0,0,0]
+  ]
+};
+const DFA=[24.2,26.0,37.2,11.6,1.0]; // Fed DFA Q3 2025, corporate equities & mutual fund shares
+
+let S=JSON.parse(JSON.stringify(DEFAULTS));
+S.companies.forEach(c=>c.on=true);
+let hovered=null;
+
+const fmt=v=>v>=1000?"$"+(v/1000).toFixed(v>=10000?1:2)+"T":"$"+Math.round(v)+"B";
+const pct=v=>(v>=10?v.toFixed(0):v.toFixed(1))+"%";
+const norm=row=>{const s=row.reduce((a,b)=>a+(+b||0),0);return s>0?row.map(x=>(+x||0)/s):row.map(()=>0)};
+const cssVar=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+function compute(){
+  const links=new Map(), add=(s,t,o,v)=>{if(v<1e-6)return;const k=s+"|"+t+"|"+o;links.set(k,(links.get(k)||0)+v)};
+  const hb=S.hb.map(norm), bk=S.bk.map(norm);
+  const buckets=new Array(BUCKETS.length).fill(0), bUS=new Array(BUCKETS.length).fill(0), bF=new Array(BUCKETS.length).fill(0);
+  let total=0;
+  S.companies.forEach((c,ci)=>{
+    if(!c.on)return;
+    const V=+c.cap||0; total+=V;
+    norm(c.mix).forEach((wh,h)=>{
+      const v1=V*wh; if(v1<1e-6)return;
+      add("C"+ci,"H"+h,ci,v1);
+      hb[h].forEach((wb,b)=>{
+        const v2=v1*wb; if(v2<1e-6)return;
+        add("H"+h,"B"+b,ci,v2);
+        bk[b].forEach((wk,k)=>{const v3=v2*wk; if(v3<1e-6)return; add("B"+b,"K"+k,ci,v3); buckets[k]+=v3; (BENEF_US[b]?bUS:bF)[k]+=v3;});
+      });
+    });
+  });
+  return {links:[...links].map(([k,v])=>{const [s,t,o]=k.split("|");return {source:s,target:t,origin:+o,value:v}}),buckets,bUS,bF,total};
+}
+
+function nodeName(id){
+  const t=id[0],i=+id.slice(1);
+  return t==="C"?S.companies[i].name:t==="H"?HOLDERS[i]:t==="B"?BENEF[i]:BUCKETS[i];
+}
+
+const tip=document.getElementById("tip");
+function showTip(e,html){tip.innerHTML=html;tip.style.opacity=1;const x=Math.min(e.clientX+14,innerWidth-290);tip.style.left=x+"px";tip.style.top=(e.clientY+14)+"px"}
+function hideTip(){tip.style.opacity=0}
+
+function draw(){
+  const {links,buckets,bUS,bF,total}=compute();
+  const el=document.getElementById("chart");
+  el.innerHTML="";
+  if(!links.length){el.innerHTML='<p style="padding:30px;color:var(--muted)">No companies selected. Turn one back on above.</p>';summarize(buckets,bUS,bF,total);return}
+  const W=Math.max(820,el.clientWidth), H=Math.max(560,Math.min(720,innerHeight*0.78)), top=34;
+  const used=new Set(); links.forEach(l=>{used.add(l.source);used.add(l.target)});
+  const order=[...S.companies.map((_,i)=>"C"+i),...HOLDERS.map((_,i)=>"H"+i),...BENEF.map((_,i)=>"B"+i),...BUCKETS.map((_,i)=>"K"+i)];
+  const nodes=order.filter(id=>used.has(id)).map(id=>({id}));
+  const sk=d3.sankey().nodeId(d=>d.id).nodeWidth(11).nodePadding(13).nodeSort(null)
+    .linkSort((a,b)=>a.origin-b.origin).extent([[1,top],[W-1,H-8]]);
+  const g=sk({nodes:nodes.map(d=>({...d})),links:links.map(d=>({...d}))});
+  const svg=d3.select(el).append("svg").attr("width",W).attr("height",H).attr("viewBox",[0,0,W,H])
+    .attr("role","img").attr("aria-label","Sankey diagram of AI company equity flowing through holders and accounts to wealth buckets");
+  const cols=[...new Set(g.nodes.map(n=>n.depth))].sort();
+  const colNames=["Company","Held by","On behalf of","Ends up with (percentile in own country)"];
+  cols.forEach(dpt=>{const n=g.nodes.find(n=>n.depth===dpt);const anchor=dpt===cols[cols.length-1]?"end":"start";
+    svg.append("text").attr("class","colhead").attr("x",anchor==="end"?n.x1:n.x0).attr("y",18).attr("text-anchor",anchor).text(colNames[dpt]||"")});
+  const bucketColor=i=>cssVar(BUCKET_VARS[i]);
+  const linkSel=svg.append("g").selectAll("path").data(g.links).join("path").attr("class","link")
+    .attr("d",d3.sankeyLinkHorizontal()).attr("stroke",d=>S.companies[d.origin].color)
+    .attr("stroke-width",d=>Math.max(1,d.width)).attr("stroke-opacity",0.42)
+    .on("mousemove",(e,d)=>showTip(e,`<b>${S.companies[d.origin].name}</b><br>${nodeName(d.source.id)} → ${nodeName(d.target.id)}<br>${fmt(d.value)} · ${pct(100*d.value/total)} of total`))
+    .on("mouseleave",hideTip);
+  const nodeSel=svg.append("g").selectAll("g").data(g.nodes).join("g");
+  nodeSel.append("rect").attr("x",d=>d.x0).attr("y",d=>d.y0).attr("width",d=>d.x1-d.x0).attr("height",d=>Math.max(1,d.y1-d.y0))
+    .attr("rx",2).attr("fill",d=>d.id[0]==="C"?S.companies[+d.id.slice(1)].color:d.id[0]==="K"?bucketColor(+d.id.slice(1)):cssVar("--node"));
+  nodeSel.filter(d=>d.y1-d.y0>=7).append("text").attr("class","nlabel")
+    .attr("x",d=>d.x0<W/2?d.x1+6:d.x0-6).attr("y",d=>(d.y0+d.y1)/2).attr("dy","0.35em")
+    .attr("text-anchor",d=>d.x0<W/2?"start":"end")
+    .call(t=>{t.append("tspan").text(d=>nodeName(d.id));t.append("tspan").attr("class","nval").attr("dx",5).text(d=>fmt(d.value))});
+  nodeSel.style("cursor",d=>d.id[0]==="C"?"pointer":"default")
+    .on("mousemove",(e,d)=>showTip(e,`<b>${nodeName(d.id)}</b><br>${fmt(d.value)} · ${pct(100*d.value/total)} of total`))
+    .on("mouseenter",(e,d)=>{
+      if(d.id[0]==="C"){const o=+d.id.slice(1);linkSel.attr("stroke-opacity",l=>l.origin===o?0.72:+cssVar("--link-dim"))}
+      else linkSel.attr("stroke-opacity",l=>(l.source===d||l.target===d)?0.72:+cssVar("--link-dim"));
+    })
+    .on("mouseleave",()=>{linkSel.attr("stroke-opacity",0.42);hideTip()})
+    .on("click",(e,d)=>{if(d.id[0]==="C"){toggleCompany(+d.id.slice(1))}});
+  summarize(buckets,bUS,bF,total);
+}
+
+function summarize(b,bUS,bF,total){
+  const T=total||1, sum=a=>a.slice(0,5).reduce((x,y)=>x+y,0);
+  const us=sum(bUS)||1, fr=sum(bF)||1, hh=sum(b)||1;
+  const top1=b[0]+b[1];
+  document.getElementById("headline").textContent= total
+    ? `Of ${fmt(total)} in AI equity, about ${pct(100*top1/T)} ends up with households in the top 1% of their own country, ${pct(100*b[5]/T)} with states and sovereign funds, and ${pct(100*b[4]/T)} with the bottom half of households anywhere.`
+    : "Select at least one company.";
+  document.getElementById("stats").innerHTML=[
+    [pct(100*(bUS[0]+bUS[1])/us),"of the US-household share goes to the US top 1%"],
+    [pct(100*(bF[0]+bF[1])/fr),"of the foreign-household share goes to the top 1% abroad"],
+    [pct(100*b[5]/T),"is publicly owned: sovereign funds, central banks, state investors"]
+  ].map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  const colors=BUCKET_VARS.map(cssVar);
+  const row=(label,vals)=>`<div class="barrow"><div class="lbl">${label}</div><div class="stack">${vals.map((v,i)=>`<div style="width:${v}%;background:${colors[i]};color:${i<3?'var(--bg)':'var(--ink)'}" title="${BUCKET_LONG[i]}: ${pct(v)}">${v>=7?pct(v):""}</div>`).join("")}</div></div>`;
+  document.getElementById("bars").innerHTML=
+    row("This model: US households",bUS.slice(0,5).map(v=>100*v/us))+
+    row("This model: foreign households (percentile within own country)",bF.slice(0,5).map(v=>100*v/fr))+
+    row("Fed DFA: all US household-held equity (Q3 2025)",DFA);
+  document.getElementById("bucketLegend").innerHTML=BUCKET_LONG.slice(0,5).map((n,i)=>`<span><i style="background:${colors[i]}"></i>${n}</span>`).join("");
+}
+
+function chips(){
+  const el=document.getElementById("companyChips");
+  el.innerHTML=S.companies.map((c,i)=>`<button class="chip" aria-pressed="${c.on}" data-i="${i}"><span class="sw" style="background:${c.color}"></span>${c.name}</button>`).join("");
+  el.querySelectorAll(".chip").forEach(b=>{
+    b.onclick=()=>toggleCompany(+b.dataset.i);
+    b.onmouseenter=()=>{const o=+b.dataset.i;d3.selectAll("#chart path.link").attr("stroke-opacity",l=>l.origin===o?0.72:+cssVar("--link-dim"))};
+    b.onmouseleave=()=>d3.selectAll("#chart path.link").attr("stroke-opacity",0.42);
+  });
+}
+function toggleCompany(i){S.companies[i].on=!S.companies[i].on;chips();draw()}
+
+function table(id,rowNames,colNames,getRow,extra){
+  const el=document.getElementById(id);
+  let h="<table><thead><tr><th></th>"+(extra?`<th>${extra.label}</th>`:"")+colNames.map(c=>`<th>${c}</th>`).join("")+"<th>Row sum</th></tr></thead><tbody>";
+  rowNames.forEach((r,ri)=>{
+    const row=getRow(ri), s=row.reduce((a,b)=>a+(+b||0),0);
+    h+=`<tr><td>${r}</td>`+(extra?`<td><input type="number" min="0" step="10" value="${extra.get(ri)}" data-r="${ri}" data-x="1" aria-label="${r} ${extra.label}"></td>`:"")
+      +row.map((v,ci)=>`<td><input type="number" min="0" step="0.5" value="${v}" data-r="${ri}" data-c="${ci}" aria-label="${r}, ${colNames[ci]}"></td>`).join("")
+      +`<td class="sum${Math.abs(s-100)>0.05?" off":""}">${+s.toFixed(1)}</td></tr>`;
+  });
+  el.innerHTML=h+"</tbody></table>";
+  el.querySelectorAll("input").forEach(inp=>inp.addEventListener("change",()=>{
+    const r=+inp.dataset.r, v=Math.max(0,+inp.value||0);
+    if(inp.dataset.x) extra.set(r,v); else getRow(r)[+inp.dataset.c]=v;
+    tables(); draw();
+  }));
+}
+function tables(){
+  table("tblCompany",S.companies.map(c=>c.name),HOLDERS,i=>S.companies[i].mix,{label:"Value ($B)",get:i=>S.companies[i].cap,set:(i,v)=>S.companies[i].cap=v});
+  table("tblHB",HOLDERS,BENEF,i=>S.hb[i]);
+  table("tblBK",BENEF,BUCKET_LONG,i=>S.bk[i]);
+}
+document.getElementById("reset").onclick=()=>{S=JSON.parse(JSON.stringify(DEFAULTS));S.companies.forEach(c=>c.on=true);chips();tables();draw()};
+
+let rt; addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(draw,150)});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",draw);
+chips(); tables(); draw();
+</script>
+</body>
+</html>

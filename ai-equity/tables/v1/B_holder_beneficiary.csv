@@ -1,0 +1,11 @@
+holder_type,Founder stakes,Employee holdings,US taxable accounts,US 401(k)s & IRAs,US DB pensions & insurance,Endowments & foundations,Foreign sovereign & official,Foreign pensions & insurers,Foreign funds & retail,Offshore vehicles,Foreign family offices & HNW,source,confidence
+Founders & insiders,100,0,0,0,0,0,0,0,0,0,0,,
+Index funds,0,0,20,40,10,5,3,6,12,2,2,,
+Active managers,0,0,20,30,15,5,4,8,12,3,3,,
+"Pensions, insurers & SWFs",0,0,0,0,50,10,18,20,0,0,2,,
+Hedge funds,0,0,30,0,15,20,2,3,0,25,5,,
+Retail & other direct,0,0,45,15,0,0,8,8,10,7,7,,
+Big Tech strategic stakes,0,0,22,28,10,5,5,8,12,5,5,,
+VC & growth funds,0,0,30,0,15,20,15,5,0,10,5,,
+Employee equity pools,0,100,0,0,0,0,0,0,0,0,0,,
+Nonprofit parent,0,0,0,0,0,100,0,0,0,0,0,,
